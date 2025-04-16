@@ -1,0 +1,6 @@
+.photo {
+    ...
+    border: 3px solid #f9d423; /* Border pada foto */
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2); /* Efek bayangan pada foto */
+  }
+  

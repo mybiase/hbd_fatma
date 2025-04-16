@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Selamat Ulang Tahun, Fatma!</title>
+<style>
+  body {
+    background: linear-gradient(135deg, rgba(224, 176, 255, 0.7) 0%, rgba(169, 214, 229, 0.7) 100%); /* Pastel tone dengan transparansi */
+    font-family: 'Segoe UI', sans-serif;
+    color: #333;
+    text-align: center;
+    padding: 40px;
+    transition: background 0.5s ease; /* Efek transisi */
+  }
+  body:hover {
+    background: linear-gradient(135deg, rgba(224, 176, 255, 0.9) 0%, rgba(169, 214, 229, 0.9) 100%); /* Saat dihover, transparansi berkurang */
+  }
+  .card {
+    background: #fffbe7;
+    border-radius: 20px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+    display: inline-block;
+    padding: 40px 30px;
+    max-width: 90%;
+  }
+  h1 {
+    color: #ff4e50; /* Warna judul */
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Efek bayangan pada judul */
+  }
+  .date {
+    font-size: 14px;
+    color: #774360; /* Warna tanggal */
+    margin-bottom: 20px;
+  }
+  .wish {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Efek bayangan pada pesan */
+  }
+  .from {
+    font-size: 16px;
+    color: #e6a8d7; /* Warna nama pengirim */
+    margin-top: 30px;
+    font-weight: bold; /* Teks tebal pada nama pengirim */
+  }
+  .photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 3px solid #f9d423; /* Border pada foto */
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2); /* Efek bayangan pada foto */
+  }
+  /* Style untuk notifikasi */
+  .notification {
+    background-color: #f0ad4e; /* Warna background notifikasi */
+    color: white; /* Warna teks notifikasi */
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    display: none; /* Sembunyikan notifikasi secara default */
+  }
+</style>
+</head>
+<body>
+  <div class="card">
+    <h1>Selamat Ulang Tahun, Fatma!</h1>
+    <img src="download.jpg" alt="Foto Fatma" class="photo">
+    <div class="date">16 April 2025</div>
+    <div class="wish">Semoga di hari spesial ini, segala harapan dan impianmu tercapai. Tetap semangat, sehat, dan bahagia selalu!</div>
+    <div class="from">LUV DARI SUNGHOON ^^</div>
+    <div class="notification" id="gift-notification">🎁 sunghoon nya lagi dicekout! 🎁</div>
+  </div>
+
+  <script>
+    // Munculkan notifikasi saat halaman dimuat
+    window.onload = function() {
+      document.getElementById('gift-notification').style.display = 'block';
+    };
+  </script>
+</body>
+</html>
